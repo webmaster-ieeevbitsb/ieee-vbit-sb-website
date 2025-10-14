@@ -155,7 +155,7 @@ export const teamData2025_26: Team[] = [
       {
         name: "Anirudh Pradhan",
         role: "MDO",
-        imageUrl: "/placeholders/team/25-26/anirudh.jpg",
+        imageUrl: "/placeholders/team/25-26/Anirudh.jpg",
       },
       {
         name: "Shweta Kumari Pandey",
@@ -176,7 +176,7 @@ export const teamData2025_26: Team[] = [
       {
         name: "Thanmayee",
         role: "Coordinator",
-        imageUrl: "/placeholders/team/25-26/thanmayee.jpg",
+        imageUrl: "/placeholders/team/25-26/Thanmayee.jpg",
       },
       {
         name: "N. Bhanu Prakash Reddy",
@@ -202,7 +202,7 @@ export const teamData2025_26: Team[] = [
       {
         name: "Akshit Chauhan Paitlya",
         role: "Vice Chairperson",
-        imageUrl: "/placeholders/team/25-26/akshit.jpg",
+        imageUrl: "/placeholders/team/25-26/Akshit.jpg",
       },
       {
         isLogo: true,
@@ -213,12 +213,12 @@ export const teamData2025_26: Team[] = [
       {
         name: "K. Geetha Bhagyasree",
         role: "Secretary",
-        imageUrl: "/placeholders/team/25-26/geetha.jpg",
+        imageUrl: "/placeholders/team/25-26/Geetha.jpg",
       },
       {
         name: "K. Abhilash",
         role: "Treasurer",
-        imageUrl: "/placeholders/team/25-26/abhilash.jpg",
+        imageUrl: "/placeholders/team/25-26/Abhilash.jpg",
       },
       {
         name: "B. Harshith",
@@ -239,7 +239,7 @@ export const teamData2025_26: Team[] = [
       {
         name: "Sunidhi Bolleddu",
         role: "Vice Chairperson",
-        imageUrl: "/placeholders/team/25-26/sunidhi.jpg",
+        imageUrl: "/placeholders/team/25-26/Sunidhi.jpg",
       },
       {
         isLogo: true,
@@ -255,12 +255,12 @@ export const teamData2025_26: Team[] = [
       {
         name: "K. S. Anirudh",
         role: "Treasurer",
-        imageUrl: "/placeholders/team/25-26/ks-anirudh.jpg",
+        imageUrl: "/placeholders/team/25-26/Ks-anirudh.jpg",
       },
       {
         name: "Kavya Yarajala",
         role: "Representative",
-        imageUrl: "/placeholders/team/25-26/kavya.jpg",
+        imageUrl: "/placeholders/team/25-26/Kavya.jpg",
       },
     ],
   },
@@ -276,28 +276,28 @@ export const teamData2025_26: Team[] = [
       {
         name: "Gujjari Swarnamai",
         role: "Vice Chairperson",
-        imageUrl: "/placeholders/team/25-26/swarnamai.jpg",
+        imageUrl: "/placeholders/team/25-26/Swarnamai.jpg",
       },
       {
         isLogo: true,
         name: "PES Logo",
         role: "PES",
-        imageUrl: "/placeholders/pes_logo.png",
+        imageUrl: "/placeholders/Pes_logo.png",
       },
       {
         name: "Roshan Jaisimha",
         role: "Secretary",
-        imageUrl: "/placeholders/team/25-26/roshan.jpg",
+        imageUrl: "/placeholders/team/25-26/Roshan.jpg",
       },
       {
         name: "Venkatanjay Pulkam",
         role: "Treasurer",
-        imageUrl: "/placeholders/team/25-26/venkata-Ajay.jpg",
+        imageUrl: "/placeholders/team/25-26/Venkata-Ajay.jpg",
       },
       {
         name: "K. Suraj Rao",
         role: "Representative",
-        imageUrl: "/placeholders/team/25-26/Suraj-Rao.jpg",
+        imageUrl: "/placeholders/team/25-26/SURAJ-RAO.jpg",
       },
     ],
   },
@@ -313,7 +313,7 @@ export const teamData2025_26: Team[] = [
       {
         name: "Shreshta",
         role: "Vice Chairperson",
-        imageUrl: "/placeholders/team/25-26/shreshta.jpg",
+        imageUrl: "/placeholders/team/25-26/Shreshta.jpg",
       },
       {
         isLogo: true,
@@ -334,7 +334,7 @@ export const teamData2025_26: Team[] = [
       {
         name: "B. Ashritha Reddy",
         role: "Representative",
-        imageUrl: "/placeholders/team/25-26/ashritha.jpg",
+        imageUrl: "/placeholders/team/25-26/Ashritha.jpg",
       },
     ],
   },
