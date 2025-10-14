@@ -250,7 +250,7 @@ export const teamData2025_26: Team[] = [
       {
         name: "G. Ruth",
         role: "Secretary",
-        imageUrl: "/placeholders/team/25-26/ruth-Grace.jpg",
+        imageUrl: "/placeholders/team/25-26/Ruth-Grace.jpg",
       },
       {
         name: "K. S. Anirudh",
