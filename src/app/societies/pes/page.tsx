@@ -63,6 +63,7 @@ export default function PesPage() {
         title={<>Get Your Power and Energy Society <br /> Membership Now To Avail Exciting Benefits</>}
         buttonText="JOIN PES TODAY"
         buttonLink="https://www.ieee-pes.org/join"
+        addSpacing={true}
       />
     </div>
   );

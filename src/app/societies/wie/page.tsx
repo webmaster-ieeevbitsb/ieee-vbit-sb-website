@@ -58,7 +58,8 @@ export default function WiePage() {
       <CtaBanner
         title={<>Get Your Women In Engineering - affinity <br /> Group Membership Now To Avail Exciting Benefits</>}
         buttonText="JOIN WIE TODAY"
-        buttonLink="https://wie.ieee.org/membership/" // Links to the official WIE membership page
+        buttonLink="https://wie.ieee.org/membership/"
+        addSpacing={true}
       />
     </div>
   );

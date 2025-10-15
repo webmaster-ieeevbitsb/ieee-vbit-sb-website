@@ -50,7 +50,7 @@ export default function ContactPage() {
               <h2 className="text-4xl font-bold text-gray-800">Have a Query?</h2>
               <p className="text-gray-600 mt-2">Fill out the form below and we will get back to you as soon as possible.</p>
             </div>
-            <form action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST" className="space-y-6">
+            <form action="https://formspree.io/f/mnnglzpq" method="POST" className="space-y-6">
               <div>
                 <label htmlFor="name" className="sr-only">Full Name</label>
                 <input type="text" name="name" id="name" required className="w-full px-4 py-3 rounded-lg bg-white/80 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Full Name" />

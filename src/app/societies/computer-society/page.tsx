@@ -46,6 +46,7 @@ export default function ComputerSocietyPage() {
         title={<>Get Your Computer Society Membership Now <br /> To Avail Exciting Benefits</>}
         buttonText="JOIN COMPUTER SOCIETY"
         buttonLink="https://www.computer.org/membership/join"
+        addSpacing={true}
       />
     </div>
   );

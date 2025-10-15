@@ -68,6 +68,7 @@ export default function CommunicationsSocietyPage() {
         title={<>Get Your Communications Society <br/> Membership Now To Avail Exciting Benefits</>}
         buttonText="JOIN COMSOC TODAY"
         buttonLink="https://www.comsoc.org/membership" 
+        addSpacing={true}
       />
     </div>
   );
