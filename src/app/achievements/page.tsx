@@ -15,7 +15,7 @@ const containerVariants = {
 
 export default function AchievementsPage() {
   return (
-    <div className="bg-white py-20">
+    <div className="bg-white py-10">
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800">Awards & Recognition</h1>
         <div className="w-24 h-1.5 bg-blue-600 mx-auto mt-4"></div>

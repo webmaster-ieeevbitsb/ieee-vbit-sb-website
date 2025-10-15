@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 export default function ReportsPage() {
   return (
-    <div className="bg-white py-20">
-      <div className="text-center mb-16">
+    <div className="bg-white py-10">
+      <div className="text-center mb-8">
         <h1 className="text-4xl md:text-5xl font-bold text-blue-600">Reports</h1>
         <div className="w-24 h-1.5 bg-blue-600 mx-auto mt-4"></div>
       </div>

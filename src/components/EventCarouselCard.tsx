@@ -18,7 +18,7 @@ export const EventCarouselCard = ({ event, isReversed = false }: EventCarouselCa
 
   return (
     <>
-      <div className="container mx-auto px-4 py-10">
+      <div className="container mx-auto px-4 py-8">
         <div className="bg-white p-4 md:p-8 rounded-lg shadow-lg">
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
             
@@ -28,11 +28,6 @@ export const EventCarouselCard = ({ event, isReversed = false }: EventCarouselCa
                   {event.images.map((src, index) => (
                     <div className="embla__slide_event_card_final" key={index}>
                       <button onClick={() => setSelectedImageIndex(index)} className="w-full h-full block">
-                        {/* 
-                          THIS IS THE DEFINITIVE FIX:
-                          We are manually creating a 16:9 aspect ratio container using the "padding-bottom" trick.
-                          This does not rely on any plugins and is guaranteed to work.
-                        */}
                         <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%' }}>
                           <div className="absolute inset-0 rounded-lg overflow-hidden shadow-md group">
                             <Image

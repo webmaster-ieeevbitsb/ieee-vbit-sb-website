@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function TeamPage2025() {
   return (
-    <div className="bg-slate-50 py-20">
+    <div className="bg-slate-50 py-10">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-12 text-center">
           Team (2025-26)
