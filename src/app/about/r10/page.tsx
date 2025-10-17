@@ -19,11 +19,11 @@ export default function AboutR10Page() {
             <div className="w-24 h-1.5 bg-blue-600 mb-8"></div>
             <p className="text-gray-700 leading-relaxed text-justify">
               The IEEE Region 10, also referred as the Asia Pacific Region,
-              comprises of 57- 63 Sections, 6-7 Councils, 17-35 Sub-sections,
-              515 Chapters, 60 Affinity Groups and 958-1600+ Student Branches.
+              comprises of 63 Sections, 7 Councils, 35 Sub-sections,
+              515 Chapters, 60 Affinity Groups and 1600+ Student Branches.
               It covers a geographical area stretching from South Korea and
               Japan in the north - east to New Zealand in the south and
-              Pakistan in the west. With a membership of 107, 154-213, 619, it is
+              Pakistan in the west. With a membership of 213, 619, it is
               one of the largest regions in IEEE. For more info, visit the
               website.
             </p>
@@ -57,7 +57,7 @@ export default function AboutR10Page() {
             The primary objective of the R10 InfoMap is to provide IEEE members,
             leaders and volunteers with an interactive platform to find, reach
             and connect with each other over a visual medium. Additionally, the
-            map provides users with an illustration of where each major meet –
+            map provides users with an illustration of where each major meet -
             up or project in the Region is taking place thereby, enabling
             members to gain a summarized understanding of the
             opportunities/events available at their disposal throughout the
@@ -72,7 +72,7 @@ export default function AboutR10Page() {
             IEEE Region 10 Congress
           </h2>
           <p className="text-gray-700 leading-relaxed text-justify">
-            With its members in 165 countries around the globe, the Region 10
+            With its members in 190+ countries around the globe, the Region 10
             Congress gathers members of the Asia-Pacific Region together every
             two years to network, learn about the latest IEEE programs and
             share strategies for enhancing membership. This is the biggest IEEE

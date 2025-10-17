@@ -8,8 +8,6 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About IEEE",
 };
-
-// ... (stats data remains the same)
 const stats = [
   { value: 486000, label: "Members", color: "text-cyan-500", plus: true },
   { value: 344, label: "Sections", color: "text-green-500" },
@@ -112,7 +110,6 @@ export default function AboutIeeePage() {
           />
         </div>
       </section>
-
       <section className="bg-blue-500 py-5">
         <div className="container mx-auto px-4">
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">

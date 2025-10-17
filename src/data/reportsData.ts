@@ -32,25 +32,25 @@ export const reportsData: ReportYearGroup[] = [
   {
     year: '2022 – 23',
     reports: [
-      { title: 'Workshop on .NET', driveLink: '#' }, { title: 'Avishkar 2K23', driveLink: '#' },
-      { title: 'WiEducate', driveLink: '#' }, { title: 'Workshop on Neuro Robotics', driveLink: '#' },
-      { title: 'Industrial visit to C-MET', driveLink: '#' },
+      { title: 'Workshop on .NET', driveLink: 'https://drive.google.com/file/d/190DK7Y4akIktZZ_VeRVil3aE0cwkWjj7/view?usp=drive_link' }, { title: 'Avishkar 2K23', driveLink: 'https://drive.google.com/file/d/1DGmuG_2-WtxVEg-fHGbO7AJfHCawJa9Q/view?usp=sharing' },
+      { title: 'WiEducate', driveLink: '#' }, { title: 'Workshop on Neuro Robotics', driveLink: 'https://drive.google.com/file/d/1WDfV_6-G3fFLCrmtWUBVLuOPxXN_IWuI/view?usp=drive_link' },
+      { title: 'Industrial visit to C-MET', driveLink: 'https://drive.google.com/file/d/1e3_lGG89bNA04tfwAjie8UWFSVgTiLCF/view?usp=drive_link' },
     ],
   },
   {
     year: '2021 – 22',
     reports: [
-      { title: 'C for Error', driveLink: '#' }, { title: 'Wi-Fi Controlled Robot', driveLink: '#' },
-      { title: 'Machine Learning Workshop+Hackathon', driveLink: '#' }, { title: '#IWD2022', driveLink: '#' },
-      { title: 'Workshop on Industry perspective of VLSI Design', driveLink: '#' }, { title: 'Workshop on DesignX', driveLink: '#' },
-      { title: 'Avishkar 2K22', driveLink: '#' }, { title: 'Epilogue 2.0', driveLink: '#' },
+      { title: 'C for Error', driveLink: 'https://drive.google.com/file/d/1qx-bwgWkF5Q4J7ObYApyME4Hwhb2Ab5y/view?usp=drive_link' }, { title: 'Wi-Fi Controlled Robot', driveLink: 'https://drive.google.com/file/d/1GDQRtb3u4S7SbPRC934VFjWTLrDuGmh2/view?usp=drive_link' },
+      { title: 'Machine Learning Workshop+Hackathon', driveLink: 'https://drive.google.com/file/d/1FNgJn17QSQmTjxR-8k8hRPdz9xfsWlq_/view?usp=drive_link' }, { title: '#IWD2022', driveLink: 'https://drive.google.com/file/d/1_bbs3WuRi1FBnznFQ_7xrgsGkFJNNJwO/view?usp=drive_link' },
+      { title: 'Workshop on Industry perspective of VLSI Design', driveLink: 'https://drive.google.com/file/d/13LZCtJVUwf9JfSQQyGhcx-1X4_W425H_/view?usp=drive_link' }, { title: 'Workshop on DesignX', driveLink: 'https://drive.google.com/file/d/1LrM5D-JYslvl2eDP2GiAzHGxBd8zJCco/view?usp=drive_link' },
+      { title: 'Avishkar 2K22', driveLink: 'https://drive.google.com/file/d/1snZWlSG2wxZHEvw4b_I1AiKPYTwzENCc/view?usp=drive_link' }, { title: 'Epilogue 2.0', driveLink: '#' },
     ],
   },
   {
     year: '2020 – 21',
     reports: [
       { title: 'Unravel', driveLink: '' }, { title: 'IEEEXtreme 14.0', driveLink: '#' },
-      { title: 'Surveykshana', driveLink: '#' }, { title: 'Webinar on Artificial Neural Network', driveLink: '#' },
+      { title: 'Surveykshana', driveLink: 'https://drive.google.com/file/d/1U90HONJa1-g3rlH3UKhuK8CbXH995C6X/view?usp=drive_link' }, { title: 'Webinar on Artificial Neural Network', driveLink: '#' },
       { title: 'Code Hustle 2.0', driveLink: '#' }, { title: 'Avishkar2k21', driveLink: '#' },
       { title: 'Epilogue', driveLink: '#' },
     ],
