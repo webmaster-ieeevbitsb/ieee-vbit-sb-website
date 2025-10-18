@@ -5,7 +5,7 @@ import { GrantsSection } from "@/components/GrantsSection";
 import { MembershipSection } from "@/components/MembershipSection";
 import { CtaBanner } from "@/components/CtaBanner";
 import { Lightbulb, Target } from "lucide-react";
-import { AnimateOnScroll } from "@/components/AnimateOnScroll"; // <-- IMPORT THE NEW COMPONENT
+import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 
 export default function Home() {
   const missionText = "The IEEE - VBIT SB promotes technical awareness amongst its members. The Student Branch emphasizes on conducting workshops, guest lectures and seminars by professionals from industries, defense and academic institutions from within and other colleges...";
