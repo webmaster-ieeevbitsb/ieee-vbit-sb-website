@@ -1,10 +1,9 @@
-'use client';
+'use client'; 
+import { useEffect } from 'react'; // <-- Make sure to import this
 import { AchievementItem } from '@/components/AchievementItem';
 import { achievementsData } from '@/data/achievementsData';
 import { motion } from 'framer-motion';
-if (typeof document !== 'undefined') {
-  document.title = 'Awards & Recognition | IEEE - VBIT SB';
-}
+import { AnimateOnScroll } from '@/components/AnimateOnScroll'; // Use AnimateOnScroll for consistency
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -15,25 +14,30 @@ const containerVariants = {
     },
   },
 };
+
 export default function AchievementsPage() {
+  // This is the correct way to set the title in a Client Component
+  useEffect(() => {
+    document.title = 'Awards & Recognition | IEEE - VBIT SB';
+  }, []);
+
   return (
     <div className="bg-white py-10">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800">Awards & Recognition</h1>
-        <div className="w-24 h-1.5 bg-blue-600 mx-auto mt-4"></div>
-      </div>
+      <AnimateOnScroll>
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800">Awards & Recognition</h1>
+          <div className="w-24 h-1.5 bg-blue-600 mx-auto mt-4"></div>
+        </div>
+      </AnimateOnScroll>
 
       <div className="container mx-auto px-4 max-w-4xl">
-        <motion.div
-          className="space-y-12"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
+        <div className="space-y-12">
           {achievementsData.map((achievement, index) => (
-            <AchievementItem key={index} {...achievement} />
+            <AnimateOnScroll key={index}>
+              <AchievementItem {...achievement} />
+            </AnimateOnScroll>
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );
