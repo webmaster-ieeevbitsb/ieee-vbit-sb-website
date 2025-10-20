@@ -15,7 +15,7 @@ export const CustomLoader = () => {
         className="flex justify-center items-center h-screen bg-white fixed inset-0 z-50"
       >
         <div className="relative w-40 h-40 flex justify-center items-center">
-          <div className="absolute w-full h-full rounded-full border-4 border-gray-200 border-t-blue-600 animate-spin"></div>
+          <div className="absolute w-full h-full rounded-full border-8 border-gray-200 border-t-blue-600 animate-spin"></div>
 
           <div className="relative w-28 h-28">
               <motion.div
