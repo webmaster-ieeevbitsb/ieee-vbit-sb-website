@@ -17,7 +17,11 @@ export default function ContactPage() {
             <div className="text-center mb-16">
               <h1 className="text-4xl md:text-5xl font-bold text-white">Contact Us</h1>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/*
+              UPDATED: Changed 'md:grid-cols-3' to 'lg:grid-cols-3'.
+              This keeps the single-column layout for tablets.
+            */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {contactData.map((person) => (
                 <ContactPersonCard key={person.name} {...person} />
               ))}
@@ -26,6 +30,7 @@ export default function ContactPage() {
         </section>
       </AnimateOnScroll>
 
+      {/* ... (The rest of the page is unchanged) ... */}
       <AnimateOnScroll>
         <section className="py-20 pattern-background-light">
           <div className="container mx-auto px-8 sm:px-12 lg:px-16">
@@ -33,8 +38,8 @@ export default function ContactPage() {
               <div className="bg-white p-8 rounded-lg shadow-md text-center relative overflow-hidden transition-shadow duration-300 hover:shadow-lg">
                 <div className="absolute top-0 left-0 w-full h-1.5 bg-blue-500"></div>
                 <Mail className="w-12 h-12 text-blue-500 mx-auto mb-4" />
-                <p className="text-lg font-semibold text-gray-700">ieeevbitsbdoc@gmail.com</p>
-                <a href="mailto:ieeevbitsbdoc@gmail.com" className="mt-6 inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-md hover:bg-blue-500 transition-colors">MAIL US</a>
+                <p className="text-lg font-semibold text-gray-700">ieeevbitsbdbc@gmail.com</p>
+                <a href="mailto:ieeevbitsbdbc@gmail.com" className="mt-6 inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-md hover:bg-blue-500 transition-colors">MAIL US</a>
               </div>
               <div className="bg-white p-8 rounded-lg shadow-md text-center relative overflow-hidden transition-shadow duration-300 hover:shadow-lg">
                 <div className="absolute top-0 left-0 w-full h-1.5 bg-blue-500"></div>
@@ -46,7 +51,6 @@ export default function ContactPage() {
           </div>
         </section>
       </AnimateOnScroll>
-
       <AnimateOnScroll>
         <section className="relative bg-gradient-to-b from-blue-50 to-white py-20 overflow-hidden">
           <div className="absolute top-0 left-0 w-64 h-64 bg-blue-200 rounded-full opacity-30 -translate-x-16 -translate-y-16"></div>
@@ -69,7 +73,6 @@ export default function ContactPage() {
           </div>
         </section>
       </AnimateOnScroll>
-
       <AnimateOnScroll>
         <section className="bg-gray-900 py-20">
           <div className="container mx-auto px-8 sm:px-12 lg:px-16">
@@ -78,15 +81,7 @@ export default function ContactPage() {
             </div>
             <div className="max-w-6xl mx-auto rounded-lg overflow-hidden shadow-lg">
               <div className="w-full h-[450px]">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.7743792694455!2d78.7196795756745!3d17.470509692224454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb76ea23dfa8d5%3A0x72d3ea7f454e19ea!2sVignana%20Bharathi%20Institute%20of%20Technology%20(VBIT)%20%7C%20Top%20Engineering%20Colleges%20In%20Telangana!5e0!3m2!1sen!2sin!4v1760363263481!5m2!1sen!2sin" 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  allowFullScreen={true} 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.7743792694455!2d78.7196795756745!3d17.470509692224454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb76ea23dfa8d5%3A0x72d3ea7f454e19ea!2sVignana%20Bharathi%20Institute%20of%20Technology%20(VBIT)%20%7C%20Top%20Engineering%20Colleges%20In%20Telangana!5e0!3m2!1sen!2sin!4v1760363263481!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
