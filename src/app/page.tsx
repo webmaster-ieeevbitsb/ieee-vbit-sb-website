@@ -44,14 +44,6 @@ export default function Home() {
       <AnimateOnScroll>
         <MembershipSection />
       </AnimateOnScroll>
-      
-      <AnimateOnScroll>
-        <CtaBanner
-          title="Get Your Membership Now To Avail Exciting Benefits"
-          buttonText="SIGN UP TODAY"
-          buttonLink="/memberships"
-        />
-      </AnimateOnScroll>
     </div>
   );
 }
