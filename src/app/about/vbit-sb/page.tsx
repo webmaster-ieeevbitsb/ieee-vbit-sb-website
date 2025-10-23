@@ -32,7 +32,7 @@ export default function AboutVbitSbPage() {
     <div>
       <FadeIn>
         <section className="bg-white py-10">
-          <div className="container mx-auto px-8 sm:px-12 lg:px-16 grid md:grid-cols-2 gap-12 items-center">
+          <div className="container mx-auto px-8 sm:px-12 lg:px-24 grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
                 IEEE - VBIT SB
@@ -84,7 +84,7 @@ export default function AboutVbitSbPage() {
       </FadeIn>
       <AnimateOnScroll>
         <section className="bg-cyan-600 py-20">
-          <div className="container mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="container mx-auto px-8 sm:px-12 lg:px-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 max-w-5xl mx-auto">
               {objectives.map((item) => (
                 <ObjectiveItem key={item} text={item} />
@@ -95,7 +95,7 @@ export default function AboutVbitSbPage() {
       </AnimateOnScroll>
       <AnimateOnScroll>
         <section className="bg-cyan-600 pb-10">
-          <div className="container mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="container mx-auto px-8 sm:px-12 lg:px-24">
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
               <div className="grid grid-cols-3 gap-4">
                 {stats.map((stat) => (

@@ -22,7 +22,7 @@ const iframeStyle: React.CSSProperties = {
 };
 
 export const YouTubeEmbed = ({ videoId, title }: YouTubeEmbedProps) => (
-  <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-2xl" style={containerStyle}>
+  <div className="max-w-2xl mx-auto rounded-lg overflow-hidden shadow-2xl" style={containerStyle}>
     <iframe
       src={`https://www.youtube-nocookie.com/embed/${videoId}`}
       title={title}

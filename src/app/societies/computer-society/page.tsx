@@ -18,7 +18,7 @@ export default function ComputerSocietyPage() {
     <div>
       <FadeIn>
         <section className="bg-white py-10">
-          <div className="container mx-auto px-8 sm:px-12 lg:px-16 grid md:grid-cols-2 gap-12 items-center">
+          <div className="container mx-auto px-8 sm:px-12 lg:px-24 grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
                 IEEE Computer Society
@@ -66,7 +66,7 @@ export default function ComputerSocietyPage() {
       </FadeIn>
       <AnimateOnScroll>
         <section className="bg-slate-50 py-10">
-          <div className="container mx-auto px-8 sm:px-12 lg:px-16 max-w-2xl">
+          <div className="container mx-auto px-8 sm:px-12 lg:px-24 max-w-2xl">
             <FeatureCard
               icon={<Target size={48} className="text-blue-600" />}
               title="Vision"
@@ -78,7 +78,7 @@ export default function ComputerSocietyPage() {
       </AnimateOnScroll>
       <AnimateOnScroll>
         <section className="bg-blue-500 py-10">
-          <div className="container mx-auto text-center px-8 sm:px-12 lg:px-16">
+          <div className="container mx-auto text-center px-8 sm:px-12 lg:px-24">
             <h2 className="text-4xl font-bold text-white mb-10">
               Benefits of IEEE CS Membership
             </h2>
@@ -104,4 +104,4 @@ export default function ComputerSocietyPage() {
       </AnimateOnScroll>
     </div>
   );
-} 
+}

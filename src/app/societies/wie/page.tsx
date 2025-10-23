@@ -52,7 +52,7 @@ export default function WiePage() {
     <div>
       <FadeIn>
         <section className="bg-white py-5">
-          <div className="container mx-auto px-8 sm:px-12 lg:px-16 grid md:grid-cols-2 gap-12 items-center">
+          <div className="container mx-auto px-8 sm:px-12 lg:px-24 grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
                 Women In Engineering - Affinity Group
@@ -79,7 +79,7 @@ export default function WiePage() {
       </FadeIn>
       <AnimateOnScroll>
         <section className="bg-slate-50 py-10">
-          <div className="container mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="container mx-auto px-8 sm:px-12 lg:px-24">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <FeatureCard
                 icon={<Atom size={48} className="text-blue-600" />}

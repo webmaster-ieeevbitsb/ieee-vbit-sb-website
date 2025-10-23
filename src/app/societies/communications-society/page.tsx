@@ -10,15 +10,27 @@ export const metadata: Metadata = {
   title: "About IEEE Communications Society",
 };
 
-const objectives = [ "To get all the students onto a common platform to share, view and express their thought and ideas.", "To create awareness and acquire knowledge on various issues related to communication.", "Creating a platform for them to interact with various people around the world and improvise their networking and interpersonal skills.", "To make the students truly understand the seamless integration and relation between Electronics and Communications.", "Acquire knowledge on current affairs and technical issues.", "Enlightening their minds with a series of guest lectures and workshops from eminent personalities.", ];
-const ObjectiveItem = ({ text }: { text: string }) => ( <div className="flex items-start gap-4"> <CheckCircle2 className="w-6 h-6 text-white flex-shrink-0 mt-1" /> <p className="text-white text-lg">{text}</p> </div> );
+const objectives = [
+  "To get all the students onto a common platform to share, view and express their thought and ideas.",
+  "To create awareness and acquire knowledge on various issues related to communication.",
+  "Creating a platform for them to interact with various people around the world and improvise their networking and interpersonal skills.",
+  "To make the students truly understand the seamless integration and relation between Electronics and Communications.",
+  "Acquire knowledge on current affairs and technical issues.",
+  "Enlightening their minds with a series of guest lectures and workshops from eminent personalities.",
+];
+const ObjectiveItem = ({ text }: { text: string }) => (
+  <div className="flex items-start gap-4">
+    <CheckCircle2 className="w-6 h-6 text-white flex-shrink-0 mt-1" />
+    <p className="text-white text-lg">{text}</p>
+  </div>
+);
 
 export default function CommunicationsSocietyPage() {
   return (
     <div>
       <FadeIn>
         <section className="bg-white py-10">
-          <div className="container mx-auto px-8 sm:px-12 lg:px-16 grid md:grid-cols-2 gap-12 items-center">
+          <div className="container mx-auto px-8 sm:px-12 lg:px-24 grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
                 Communications Society
@@ -69,7 +81,7 @@ export default function CommunicationsSocietyPage() {
       </FadeIn>
       <AnimateOnScroll>
         <section className="bg-blue-500 py-10">
-          <div className="container mx-auto text-center px-8 sm:px-12 lg:px-16">
+          <div className="container mx-auto text-center px-8 sm:px-12 lg:px-24">
             <h2 className="text-4xl font-bold text-white mb-10">
               What People say about ComSoc!
             </h2>
@@ -82,7 +94,7 @@ export default function CommunicationsSocietyPage() {
       </AnimateOnScroll>
       <AnimateOnScroll>
         <section className="bg-blue-500 pb-10">
-          <div className="container mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="container mx-auto px-8 sm:px-12 lg:px-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 max-w-5xl mx-auto">
               {objectives.map((item) => (
                 <ObjectiveItem key={item} text={item} />

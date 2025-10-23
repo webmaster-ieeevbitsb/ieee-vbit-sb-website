@@ -29,7 +29,7 @@ export default function AboutIeeePage() {
     <div>
       <FadeIn>
         <section className="bg-white py-10">
-          <div className="container mx-auto px-8 sm:px-12 lg:px-16 grid md:grid-cols-2 gap-12 items-center">
+          <div className="container mx-auto px-8 sm:px-12 lg:px-24 grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">IEEE</h1>
               <div className="w-24 h-1.5 bg-blue-600 mb-6"></div>
@@ -68,10 +68,9 @@ export default function AboutIeeePage() {
           </div>
         </section>
       </FadeIn>
-
       <AnimateOnScroll>
         <section className="bg-white pb-5">
-          <div className="container mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="container mx-auto px-8 sm:px-12 lg:px-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <FeatureCard icon={<Lightbulb size={48} className="text-blue-600" />} title="Mission">{missionText}</FeatureCard>
               <FeatureCard icon={<Target size={48} className="text-blue-600" />} title="Vision">{visionText}</FeatureCard>
@@ -79,10 +78,9 @@ export default function AboutIeeePage() {
           </div>
         </section>
       </AnimateOnScroll>
-
       <AnimateOnScroll>
         <section className="bg-blue-500 py-10">
-          <div className="container mx-auto text-center px-8 sm:px-12 lg:px-16">
+          <div className="container mx-auto text-center px-8 sm:px-12 lg:px-24">
             <h2 className="text-4xl font-bold text-white mb-10">
               Why to Join IEEE ? Benefits of IEEE !
             </h2>
@@ -90,10 +88,9 @@ export default function AboutIeeePage() {
           </div>
         </section>
       </AnimateOnScroll>
-
       <AnimateOnScroll>
         <section className="bg-blue-500 py-5">
-          <div className="container mx-auto px-8 sm:px-12 lg:px-16">
+          <div className="container mx-auto px-8 sm:px-12 lg:px-24">
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-4">
                 {stats.map((stat) => (<AnimatedStat key={stat.label} value={stat.value} label={stat.label} colorClass={stat.color} plus={stat.plus} />))}
