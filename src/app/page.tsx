@@ -40,15 +40,6 @@ export default function Home() {
       <AnimateOnScroll>
         <MembershipSection />
       </AnimateOnScroll>
-      
-      <AnimateOnScroll>
-        <CtaBanner
-          title="Explore All Membership Benefits and Opportunities"
-          buttonText="LEARN MORE"
-          buttonLink="/memberships"
-          addSpacing={true}
-        />
-      </AnimateOnScroll>
     </div>
   );
 }
