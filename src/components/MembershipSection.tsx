@@ -13,7 +13,7 @@ export const MembershipSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-4 items-center">
         {membershipBanners.map((banner) => (
           <div key={banner.altText} className="flex flex-col items-center gap-8">
-            <div className="w-full rounded-lg shadow-2xl overflow-hidden transition-transform duration-300 transform hover:-translate-y-2">
+            <div className="w-full shadow-2xl overflow-hidden transition-transform duration-300 transform hover:-translate-y-2">
               <Image 
                 src={banner.imageUrl} 
                 alt={banner.altText} 
