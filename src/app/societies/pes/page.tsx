@@ -29,11 +29,22 @@ export default function PesPage() {
                 <p>
                   The Power &amp; Energy Society (PES) provides the world's
                   largest forum for sharing the latest in technological
-                  developments in the electric power industry...
+                  developments in the electric power industry for developing
+                  standards that guide the development and construction of
+                  equipment and systems, for educating members of the industry and
+                  the general public. Members of the Power &amp; Energy Society
+                  are leaders in this field and their employers derive substantial
+                  benefits from involvement with this unique and outstanding
+                  association.
                 </p>
-                <p><b>LEARN</b>, about current research and applications of recent technologies...</p>
-                <p><b>STAY INFORMED</b>, about the latest developments in traditional technologies...</p>
-                <p><b>NETWORK</b>, with experienced professionals in all aspects of the industry...</p>
+                <p><b>LEARN</b>, about current research and applications of recent technologies such as wind, photovoltaics, fuel cells,
+                  distributed generation, flexible AC transmission, energy
+                  storage, Smart Grids and more.</p>
+                <p><b>STAY INFORMED</b>, about the latest developments in traditional technologies and the new opportunities created as
+                  today’s technological and financial situations impact the power
+                  and energy industry.</p>
+                <p><b>NETWORK</b>, with experienced professionals in all aspects of the industry  be that local, regional or international meetings.
+                  Save big on conference registration fees, some are even free!</p>
               </div>
             </div>
             <div className="flex justify-center md:justify-end">
