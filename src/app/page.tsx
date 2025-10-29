@@ -7,6 +7,7 @@ import { CtaBanner } from "@/components/CtaBanner";
 import { Lightbulb, Target } from "lucide-react";
 import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 import { FadeIn } from "@/components/FadeIn";
+import { VotingContestSection } from "@/components/VotingContestSection"; // <-- IMPORT THE NEW COMPONENT
 
 export default function Home() {
   const missionText = "The IEEE - VBIT SB promotes technical awareness amongst its college students and helps to cultivate the same interest in the other colleges. The Student Branch emphasizes on conducting activities which assist in developing the technical cognition of a student from all kinds of backgrounds. It aims at fostering great leadership skills among the young minds.";
@@ -14,10 +15,14 @@ export default function Home() {
 
   return (
     <div>
+      {/* --- THIS IS THE NEW TEMPORARY SECTION --- */}
+      <VotingContestSection /> 
+
       <FadeIn>
         <ActivityCatalogue />
       </FadeIn>
       
+      {/* ... (the rest of your homepage code remains unchanged) ... */}
       <AnimateOnScroll>
         <SocietiesSection />
       </AnimateOnScroll>
