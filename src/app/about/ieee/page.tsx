@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "About IEEE",
 };
 const stats = [
-  { value: 486000, label: "Members", color: "text-cyan-500", plus: true },
+  { value: 500000, label: "Members", color: "text-cyan-500", plus: true },
   { value: 344, label: "Sections", color: "text-green-500" },
   { value: 2816, label: "Chapters", color: "text-yellow-500" },
   { value: 3613, label: "Student Branches", color: "text-purple-500" },
