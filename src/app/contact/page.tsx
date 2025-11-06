@@ -4,12 +4,15 @@ import { Mail, MapPin, Send } from 'lucide-react';
 import type { Metadata } from 'next';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { FadeIn } from '@/components/FadeIn';
+import { LazyMap } from '@/components/LazyMap'; 
 
 export const metadata: Metadata = {
   title: 'Contact',
 };
 
 export default function ContactPage() {
+  const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.7743792694455!2d78.7196795756745!3d17.470509692224454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb76ea23dfa8d5%3A0x72d3ea7f454e19ea!2sVignana%20Bharathi%20Institute%20of%20Technology%20(VBIT)%20%7C%20Top%20Engineering%20Colleges%20In%20Telangana!5e0!3m2!1sen!2sin!4v1760363263481!5m2!1sen!2sin";
+
   return (
     <div>
       <FadeIn>
@@ -58,8 +61,8 @@ export default function ContactPage() {
                 <h2 className="text-4xl font-bold text-gray-800">Have a Query?</h2>
                 <p className="text-gray-600 mt-2">Fill out the form below and we will get back to you as soon as possible.</p>
               </div>
-              <form action="https://formspree.io/f/mnnglzpq" method="POST" className="space-y-6">
-                <input type="hidden" name="_next" value="https://ieee-vbit-sb.vercel.app/thank-you" />
+              <form action="https://formspree.io/f/mdkwygpj" method="POST" className="space-y-6">
+               <input type="hidden" name="_next" value="https://www.ieeevbitsb.in/thank-you" />
                 <div><label htmlFor="name" className="sr-only">Full Name</label><input type="text" name="name" id="name" required className="w-full px-4 py-3 rounded-lg bg-white/80 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Full Name" /></div>
                 <div><label htmlFor="email" className="sr-only">Email Address</label><input type="email" name="email" id="email" required className="w-full px-4 py-3 rounded-lg bg-white/80 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Email Address" /></div>
                 <div><label htmlFor="phone" className="sr-only">Phone Number</label><input type="tel" name="phone" id="phone" className="w-full px-4 py-3 rounded-lg bg-white/80 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Phone Number (Optional)" /></div>
@@ -73,13 +76,16 @@ export default function ContactPage() {
 
       <AnimateOnScroll>
         <section className="bg-gray-900 py-20">
-          <div className="container mx-auto px-8 sm:px-12 lg:px-16">
-            <div className="text-center mb-12">
+          <div className="container mx-auto px-8 sm:px-12 lg:px-16 text-center">
+            <div className="mb-12">
               <h2 className="text-4xl font-bold text-white">Our Location</h2>
+              <p className="text-gray-400 mt-2 max-w-2xl mx-auto">
+                Find us at Vignana Bharathi Institute of Technology, Aushapur, Ghatkesar, for your inquiries and collaborations.
+              </p>
             </div>
-            <div className="max-w-6xl mx-auto rounded-lg overflow-hidden shadow-lg">
+            <div className="max-w-6xl mx-auto rounded-xl overflow-hidden shadow-2xl border-4 border-gray-700">
               <div className="w-full h-[450px]">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.7743792694455!2d78.7196795756745!3d17.470509692224454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb76ea23dfa8d5%3A0x72d3ea7f454e19ea!2sVignana%20Bharathi%20Institute%20of%20Technology%20(VBIT)%20%7C%20Top%20Engineering%20Colleges%20In%20Telangana!5e0!3m2!1sen!2sin!4v1760363263481!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <LazyMap src={mapSrc} />
               </div>
             </div>
           </div>

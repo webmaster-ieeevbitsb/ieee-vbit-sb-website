@@ -1,16 +1,29 @@
 'use client'; 
 
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { EventCarouselCard } from '@/components/EventCarouselCard';
 import { galleryData } from '@/data/galleryData';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { FadeIn } from '@/components/FadeIn';
+import { AnimatePresence } from 'framer-motion';
+import { Lightbox } from '@/components/Lightbox';
+import type { GalleryEventData } from '@/data/galleryData';
 
 export default function GalleryPage() {
+  const [activeLightbox, setActiveLightbox] = useState<{ event: GalleryEventData; initialIndex: number } | null>(null);
+
   useEffect(() => {
     document.title = 'Gallery | IEEE - VBIT SB';
     window.scrollTo(0, 0);
   }, []);
+
+  const openLightbox = (event: GalleryEventData, imageIndex: number) => {
+    setActiveLightbox({ event, initialIndex: imageIndex });
+  };
+
+  const closeLightbox = () => {
+    setActiveLightbox(null);
+  };
 
   return (
     <div className="py-10 pattern-background-light">
@@ -20,6 +33,7 @@ export default function GalleryPage() {
           <p className="text-gray-600 mt-4 text-xl">A glimpse into our moments of learning and community.</p>
         </div>
       </FadeIn>
+      
       <div>
         {galleryData.map((event, index) => (
           <AnimateOnScroll key={event.slug}>
@@ -27,11 +41,22 @@ export default function GalleryPage() {
               <EventCarouselCard 
                 event={event} 
                 isReversed={index % 2 !== 0} 
+                onImageClick={(imageIndex) => openLightbox(event, imageIndex)} 
               />
             </div>
           </AnimateOnScroll>
         ))}
       </div>
+
+      <AnimatePresence>
+        {activeLightbox && (
+          <Lightbox
+            images={activeLightbox.event.images}
+            initialIndex={activeLightbox.initialIndex}
+            onClose={closeLightbox}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }
