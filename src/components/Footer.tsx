@@ -13,7 +13,7 @@ export const Footer = () => {
             <Facebook size={24} strokeWidth={1.5} />
           </a>
           {/* Instagram Icon */}
-          <a href="https://www.instagram.com/ieeevbitsb/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+          <a href="https://www.instagram.com/ieee_vbitsb/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
             <Instagram size={24} strokeWidth={1.5} />
           </a>
           {/* LinkedIn Icon */}
