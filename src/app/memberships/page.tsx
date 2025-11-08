@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const carouselImages = Array.from(
   { length: 8 },
-  (_, i) => `/placeholders/carousel/slide-${i + 1}.jpg`
+  (_, i) => `/placeholders/carousel/slide-${i + 1}.webp`
 );
 
 const resourceLinks = [

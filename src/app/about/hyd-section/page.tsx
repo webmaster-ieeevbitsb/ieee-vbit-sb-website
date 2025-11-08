@@ -40,7 +40,7 @@ export default function AboutHydSectionPage() {
             </div>
             <div className="flex justify-center md:justify-end">
               <Image
-                src="/placeholders/ieee_hyd_section_logo.png"
+                src="/placeholders/ieee_hyd_section_logo.webp"
                 alt="IEEE Hyderabad Section Logo"
                 width={500}
                 height={150}

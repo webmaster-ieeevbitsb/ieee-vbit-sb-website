@@ -17,7 +17,7 @@ export const galleryData: GalleryEventData[] = [
       (_, i) =>
         `/placeholders/gallery/workshop-on-antenna-design-using-hfss/image-${
           i + 1
-        }.jpg`
+        }.webp`
     ),
   },
   {
@@ -26,7 +26,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "algoveda",
     images: Array.from(
       { length: 10 },
-      (_, i) => `/placeholders/gallery/algoveda/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/algoveda/image-${i + 1}.webp`
     ),
   },
   {
@@ -38,7 +38,7 @@ export const galleryData: GalleryEventData[] = [
       (_, i) =>
         `/placeholders/gallery/industrial-visit-to-power-grid/image-${
           i + 1
-        }.jpg`
+        }.webp`
     ),
   },
   {
@@ -47,7 +47,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "wieducate-3-0",
     images: Array.from(
       { length: 10 },
-      (_, i) => `/placeholders/gallery/wieducate-3-0/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/wieducate-3-0/image-${i + 1}.webp`
     ),
   },
   {
@@ -56,7 +56,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "ieee-insights",
     images: Array.from(
       { length: 10 },
-      (_, i) => `/placeholders/gallery/ieee-insights/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/ieee-insights/image-${i + 1}.webp`
     ),
   },
   {
@@ -65,7 +65,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "designx-2-0",
     images: Array.from(
       { length: 8 },
-      (_, i) => `/placeholders/gallery/designx-2-0/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/designx-2-0/image-${i + 1}.webp`
     ),
   },
   {
@@ -74,7 +74,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "circuitry",
     images: Array.from(
       { length: 10 },
-      (_, i) => `/placeholders/gallery/circuitry/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/circuitry/image-${i + 1}.webp`
     ),
   },
   {
@@ -86,7 +86,7 @@ export const galleryData: GalleryEventData[] = [
       (_, i) =>
         `/placeholders/gallery/workshop-on-image-processing-using-matlab/image-${
           i + 1
-        }.jpg`
+        }.webp`
     ),
   },
   {
@@ -98,7 +98,7 @@ export const galleryData: GalleryEventData[] = [
       (_, i) =>
         `/placeholders/gallery/webinar-on-design-thinking-and-innovation/image-${
           i + 1
-        }.jpg`
+        }.webp`
     ),
   },
   {
@@ -107,7 +107,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "wieducate-2-0",
     images: Array.from(
       { length: 10 },
-      (_, i) => `/placeholders/gallery/wieducate-2-0/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/wieducate-2-0/image-${i + 1}.webp`
     ),
   },
   {
@@ -116,7 +116,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "codequest",
     images: Array.from(
       { length: 10 },
-      (_, i) => `/placeholders/gallery/codequest/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/codequest/image-${i + 1}.webp`
     ),
   },
   {
@@ -125,7 +125,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "elevate",
     images: Array.from(
       { length: 10 },
-      (_, i) => `/placeholders/gallery/elevate/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/elevate/image-${i + 1}.webp`
     ),
   },
   {
@@ -135,7 +135,7 @@ export const galleryData: GalleryEventData[] = [
     images: Array.from(
       { length: 7 },
       (_, i) =>
-        `/placeholders/gallery/industrial-visit-to-c-met/image-${i + 1}.jpg`
+        `/placeholders/gallery/industrial-visit-to-c-met/image-${i + 1}.webp`
     ),
   },
   {
@@ -145,7 +145,7 @@ export const galleryData: GalleryEventData[] = [
     images: Array.from(
       { length: 7 },
       (_, i) =>
-        `/placeholders/gallery/workshop-on-neuro-robotics/image-${i + 1}.jpg`
+        `/placeholders/gallery/workshop-on-neuro-robotics/image-${i + 1}.webp`
     ),
   },
   {
@@ -154,7 +154,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "wieducate",
     images: Array.from(
       { length: 8 },
-      (_, i) => `/placeholders/gallery/wieducate/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/wieducate/image-${i + 1}.webp`
     ),
   },
   {
@@ -163,7 +163,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "avishkar-2k23",
     images: Array.from(
       { length: 10 },
-      (_, i) => `/placeholders/gallery/avishkar-2k23/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/avishkar-2k23/image-${i + 1}.webp`
     ),
   },
   {
@@ -172,7 +172,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "dotnet-workshop",
     images: Array.from(
       { length: 6 },
-      (_, i) => `/placeholders/gallery/dotnet-workshop/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/dotnet-workshop/image-${i + 1}.webp`
     ),
   },
   {
@@ -181,7 +181,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "designx",
     images: Array.from(
       { length: 5 },
-      (_, i) => `/placeholders/gallery/designx/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/designx/image-${i + 1}.webp`
     ),
   },
   {
@@ -190,7 +190,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "epilogue",
     images: Array.from(
       { length: 5 },
-      (_, i) => `/placeholders/gallery/epilogue/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/epilogue/image-${i + 1}.webp`
     ),
   },
   {
@@ -199,7 +199,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "iwd22",
     images: Array.from(
       { length: 2 },
-      (_, i) => `/placeholders/gallery/iwd22/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/iwd22/image-${i + 1}.webp`
     ),
   },
   {
@@ -208,7 +208,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "wifi-controlled-robot",
     images: Array.from(
       { length: 5 },
-      (_, i) => `/placeholders/gallery/wifi-controlled-robot/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/wifi-controlled-robot/image-${i + 1}.webp`
     ),
   },
   {
@@ -217,7 +217,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "c-for-error",
     images: Array.from(
       { length: 5 },
-      (_, i) => `/placeholders/gallery/c-for-error/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/c-for-error/image-${i + 1}.webp`
     ),
   },
   {
@@ -227,7 +227,7 @@ export const galleryData: GalleryEventData[] = [
     images: Array.from(
       { length: 9 },
       (_, i) =>
-        `/placeholders/gallery/virtual-visit-to-substation/image-${i + 1}.jpg`
+        `/placeholders/gallery/virtual-visit-to-substation/image-${i + 1}.webp`
     ),
   },
   {
@@ -236,7 +236,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "unravel",
     images: Array.from(
       { length: 7 },
-      (_, i) => `/placeholders/gallery/unravel/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/unravel/image-${i + 1}.webp`
     ),
   },
   {
@@ -245,7 +245,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "ieeextreme-14-0",
     images: Array.from(
       { length: 9 },
-      (_, i) => `/placeholders/gallery/ieeextreme-14-0/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/ieeextreme-14-0/image-${i + 1}.webp`
     ),
   },
   {
@@ -254,7 +254,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "code-hustle",
     images: Array.from(
       { length: 10 },
-      (_, i) => `/placeholders/gallery/code-hustle/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/code-hustle/image-${i + 1}.webp`
     ),
   },
   {
@@ -266,7 +266,7 @@ export const galleryData: GalleryEventData[] = [
       (_, i) =>
         `/placeholders/gallery/guest-lecture-on-satellite-communications/image-${
           i + 1
-        }.jpg`
+        }.webp`
     ),
   },
   {
@@ -275,7 +275,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "avishkar-2k20",
     images: Array.from(
       { length: 10 },
-      (_, i) => `/placeholders/gallery/avishkar-2k20/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/avishkar-2k20/image-${i + 1}.webp`
     ),
   },
   {
@@ -285,7 +285,7 @@ export const galleryData: GalleryEventData[] = [
     images: Array.from(
       { length: 7 },
       (_, i) =>
-        `/placeholders/gallery/fdp-and-sdp-on-ieeexplore/image-${i + 1}.jpg`
+        `/placeholders/gallery/fdp-and-sdp-on-ieeexplore/image-${i + 1}.webp`
     ),
   },
   {
@@ -295,7 +295,7 @@ export const galleryData: GalleryEventData[] = [
     images: Array.from(
       { length: 8 },
       (_, i) =>
-        `/placeholders/gallery/seminar-on-bacterial-concrete/image-${i + 1}.jpg`
+        `/placeholders/gallery/seminar-on-bacterial-concrete/image-${i + 1}.webp`
     ),
   },
   {
@@ -307,7 +307,7 @@ export const galleryData: GalleryEventData[] = [
       (_, i) =>
         `/placeholders/gallery/guest-lecture-on-hybrid-electric-vehicles/image-${
           i + 1
-        }.jpg`
+        }.webp`
     ),
   },
   {
@@ -319,7 +319,7 @@ export const galleryData: GalleryEventData[] = [
       (_, i) =>
         `/placeholders/gallery/sdp-on-search-engine-optimization/image-${
           i + 1
-        }.jpg`
+        }.webp`
     ),
   },
   {
@@ -331,7 +331,7 @@ export const galleryData: GalleryEventData[] = [
       (_, i) =>
         `/placeholders/gallery/unplug-disconnect-to-reconnect/image-${
           i + 1
-        }.jpg`
+        }.webp`
     ),
   },
   {
@@ -340,7 +340,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "imd-industrial-visit",
     images: Array.from(
       { length: 4 },
-      (_, i) => `/placeholders/gallery/imd-industrial-visit/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/imd-industrial-visit/image-${i + 1}.webp`
     ),
   },
   {
@@ -350,7 +350,7 @@ export const galleryData: GalleryEventData[] = [
     images: Array.from(
       { length: 4 },
       (_, i) =>
-        `/placeholders/gallery/icomm-industrial-visit/image-${i + 1}.jpg`
+        `/placeholders/gallery/icomm-industrial-visit/image-${i + 1}.webp`
     ),
   },
   {
@@ -362,7 +362,7 @@ export const galleryData: GalleryEventData[] = [
       (_, i) =>
         `/placeholders/gallery/machine-learning-bootcamp-hackathon/image-${
           i + 1
-        }.jpg`
+        }.webp`
     ),
   },
   {
@@ -371,7 +371,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "avishkar-2k19",
     images: Array.from(
       { length: 10 },
-      (_, i) => `/placeholders/gallery/avishkar-2k19/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/avishkar-2k19/image-${i + 1}.webp`
     ),
   },
   {
@@ -380,7 +380,7 @@ export const galleryData: GalleryEventData[] = [
     slug: "inceptra",
     images: Array.from(
       { length: 6 },
-      (_, i) => `/placeholders/gallery/inceptra/image-${i + 1}.jpg`
+      (_, i) => `/placeholders/gallery/inceptra/image-${i + 1}.webp`
     ),
   },
 ];

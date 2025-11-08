@@ -49,7 +49,7 @@ export default function PesPage() {
             </div>
             <div className="flex justify-center md:justify-end">
               <Image
-                src="/placeholders/Pes_logo.png"
+                src="/placeholders/Pes_logo.webp"
                 alt="IEEE Power & Energy Society Logo"
                 width={400}
                 height={300}

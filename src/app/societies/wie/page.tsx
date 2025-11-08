@@ -67,7 +67,7 @@ export default function WiePage() {
             </div>
             <div className="flex justify-center md:justify-end">
               <Image
-                src="/placeholders/wie_logo.png"
+                src="/placeholders/wie_logo.webp"
                 alt="IEEE Women in Engineering Logo"
                 width={400}
                 height={300}

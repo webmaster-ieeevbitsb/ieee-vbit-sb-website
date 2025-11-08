@@ -69,7 +69,7 @@ export default function CommunicationsSocietyPage() {
             </div>
             <div className="flex justify-center md:justify-end">
               <Image
-                src="/placeholders/comsoc_logo.png"
+                src="/placeholders/comsoc_logo.webp"
                 alt="IEEE Communications Society Logo"
                 width={500}
                 height={200}

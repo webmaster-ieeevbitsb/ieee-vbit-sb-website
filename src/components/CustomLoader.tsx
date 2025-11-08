@@ -48,7 +48,7 @@ export const CustomLoader = () => {
                 }}
               >
                 <Image
-                  src="/placeholders/IEEE_logo.png"
+                  src="/placeholders/IEEE_logo.webp"
                   alt="IEEE Logo"
                   width={112}
                   height={112}

@@ -54,7 +54,7 @@ export default function ComputerSocietyPage() {
             </div>
             <div className="flex justify-center md:justify-end">
               <Image
-                src="/placeholders/cs_logo.png"
+                src="/placeholders/cs_logo.webp"
                 alt="IEEE Computer Society Logo"
                 width={500}
                 height={150}
