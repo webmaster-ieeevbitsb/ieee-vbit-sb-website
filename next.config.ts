@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export',
+  // as switched to vercel deployment
+  // output: 'export', 
 
 // as cpanel doesnt soupprt image optimization
   images: {
