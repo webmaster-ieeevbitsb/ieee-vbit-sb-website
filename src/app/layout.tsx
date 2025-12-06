@@ -12,11 +12,10 @@ export const metadata: Metadata = {
     default: 'IEEE - VBIT SB | Advancing Technology for Humanity',
     template: '%s | IEEE - VBIT SB',
   },
-  description: "The official website for the IEEE Student Branch at Vignana Bharathi Institute of Technology.",
-  icons: [{ rel: 'icon', url: Favicon.src }],
+  description: "The official website for the IEEE Student Branch at Vignana Bharathi Institute of Technology.",  
+  icons: [{ rel: 'icon', url: Favicon.src }], 
 };
 
-// --- NEW SCHEMA MARKUP ---
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -33,7 +32,6 @@ const jsonLd = {
     'https://www.facebook.com/ieeevbitsb',
     'https://www.instagram.com/ieee_vbitsb/',
     'https://www.linkedin.com/company/ieee-vbit-sb',
-    'https://vbithyd.ac.in/ieee-student-branch-of-vbit/' 
   ],
 };
 
