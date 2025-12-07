@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { AnimatePresence } from 'framer-motion';
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -9,6 +10,11 @@ import { ScrollToTopButton } from '@/components/ScrollToTopButton';
 
 export function ClientLayoutWrapper({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(true);
+  
+  const pathname = usePathname();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     if (sessionStorage.getItem('hasLoadedOnce')) {
