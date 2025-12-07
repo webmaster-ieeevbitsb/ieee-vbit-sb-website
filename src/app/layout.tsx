@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import { Inter } from 'next/font/google';
 import "./globals.css";
 import Favicon from './favicon.png';
 import { ClientLayoutWrapper } from "@/components/ClientLayoutWrapper";
 
+const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.ieeevbitsb.in'),
   alternates: {
@@ -38,7 +40,7 @@ const jsonLd = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="" suppressHydrationWarning={true}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

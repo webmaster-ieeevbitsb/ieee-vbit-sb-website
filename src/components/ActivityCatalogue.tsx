@@ -1,35 +1,20 @@
 "use client";
 
 import { useState } from 'react';
+import dynamic from 'next/dynamic';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
 import { activities, Activity } from '@/data/activityCatalogueData';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X } from 'lucide-react';
+import { AnimatePresence } from 'framer-motion';
+import type { ActivityModalProps } from './ActivityModal';
 
-const ActivityModal = ({ activity, onClose }: { activity: Activity; onClose: () => void; }) => (
-    <div className="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex justify-center items-center z-[110] p-4">
-      <motion.div
-        initial={{ scale: 0.95, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        exit={{ scale: 0.95, opacity: 0 }}
-        transition={{ duration: 0.3, ease: 'easeOut' }}
-        className="bg-white rounded-lg shadow-xl max-w-5xl w-full relative max-h-[90vh] overflow-y-auto"
-      >
-        <button onClick={onClose} className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 z-10"><X size={24} /></button>
-        <div className="grid md:grid-cols-2 gap-8 p-8">
-          <div className="w-full h-full relative min-h-[400px]">
-            <Image src={activity.modalContent.imageUrl} alt={activity.modalContent.title} fill className="object-contain rounded-md" />
-          </div>
-          <div>
-            <h2 className="text-3xl font-bold mb-2 text-gray-900">{activity.modalContent.title}</h2>
-            <p className="text-blue-600 font-semibold mb-4">{activity.modalContent.date}</p>
-            <p className="text-gray-700 leading-relaxed text-justify">{activity.modalContent.description}</p>
-          </div>
-        </div>
-      </motion.div>
-    </div>
+const ActivityModal = dynamic<ActivityModalProps>(() => 
+  import('./ActivityModal').then(mod => mod.ActivityModal),
+  { 
+    ssr: false,
+    loading: () => <div className="fixed inset-0 z-[110]" />,
+  }
 );
 
 export const ActivityCatalogue = () => {
@@ -43,6 +28,7 @@ export const ActivityCatalogue = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-2">Activity Catalogue</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
         </div>
+        
         <div className="lg:hidden embla -mx-2" ref={emblaRef}>
           <div className="embla__container">
             {activities.map((activity, index) => (
@@ -55,7 +41,6 @@ export const ActivityCatalogue = () => {
                       fill 
                       className="object-contain"
                       sizes="(max-width: 768px) 90vw, 40vw"
-                      // Prioritize the first image in the mobile carousel
                       priority={index === 0}
                     />
                   </div>
@@ -68,6 +53,7 @@ export const ActivityCatalogue = () => {
             ))}
           </div>
         </div>
+
         <div className="hidden lg:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 px-4">
           {activities.map((activity, index) => (
             <div key={activity.title} onClick={() => setSelectedActivity(activity)} className="cursor-pointer group">
@@ -87,6 +73,7 @@ export const ActivityCatalogue = () => {
           ))}
         </div>
       </div>
+      
       <AnimatePresence>
         {selectedActivity && <ActivityModal activity={selectedActivity} onClose={() => setSelectedActivity(null)} />}
       </AnimatePresence>

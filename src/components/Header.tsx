@@ -1,12 +1,12 @@
 'use client'; 
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
-import { motion, AnimatePresence, Variants } from 'framer-motion';
+import { motion, AnimatePresence, Variants, useReducedMotion } from 'framer-motion';
 
-// --- TYPE DEFINITIONS & DATA ---
 type NavLink = { title: string; href: string; };
 type NavLinks = { [key: string]: NavLink[]; };
 const navLinks: NavLinks = {
@@ -16,7 +16,6 @@ const navLinks: NavLinks = {
   events: [ { title: 'Gallery', href: '/events/gallery' }, { title: 'Reports', href: '/events/reports' }, ],
 };
 
-// --- ANIMATION VARIANTS ---
 const dropdownVariants: Variants = {
     hidden: { opacity: 0, y: -10, transition: { duration: 0.2, ease: 'easeOut' } },
     visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: 'easeIn' } },
@@ -26,23 +25,26 @@ const mobileLinkVariants: Variants = {
   animate: { x: 0, opacity: 1, transition: { type: 'spring', stiffness: 300, damping: 30 } },
 };
 const submenuVariants: Variants = {
-  open: { opacity: 1, height: 'auto', transition: { duration: 0.3, ease: 'easeOut' } },
-  collapsed: { opacity: 0, height: 0, transition: { duration: 0.3, ease: 'easeIn' } },
+  open: { opacity: 1, scaleY: 1, height: 'auto', transition: { duration: 0.3, ease: 'easeOut' } },
+  collapsed: { opacity: 0, scaleY: 0, height: 0, transition: { duration: 0.2, ease: 'easeIn' } },
 };
 
-// --- SUB-COMPONENT for a single accordion item ---
 type MobileAccordionItemProps = { title: string; links: NavLink[]; isOpen: boolean; onToggle: () => void; pathname: string; }
 const MobileAccordionItem = ({ title, links, isOpen, onToggle, pathname }: MobileAccordionItemProps) => (
   <motion.li variants={mobileLinkVariants}>
-    <button onClick={onToggle} className="w-full flex justify-between items-center text-slate-700">
+    <button onClick={onToggle} className="w-full flex justify-between items-center text-slate-700 text-lg font-bold">
       <span>{title.toUpperCase()}</span>
       <motion.div animate={{ rotate: isOpen ? 180 : 0 }}><ChevronDown size={24} /></motion.div>
     </button>
     <AnimatePresence>
       {isOpen && (
-        <motion.ul variants={submenuVariants} initial="collapsed" animate="open" exit="collapsed" className="pl-4 mt-2 space-y-2 overflow-hidden">
+        <motion.ul 
+          variants={submenuVariants} initial="collapsed" animate="open" exit="collapsed" 
+          style={{ transformOrigin: 'top', willChange: 'transform, opacity' }}
+          className="pl-4 mt-2 space-y-2 overflow-hidden"
+        >
           {links.map(link => (
-            <li key={link.href}><Link href={link.href} className={`block text-sm ${pathname === link.href ? 'text-blue-600 font-semibold' : 'text-slate-600'}`}>{link.title}</Link></li>
+            <li key={link.href}><Link href={link.href} className={`block text-sm p-1 rounded-md ${pathname === link.href ? 'text-blue-600 font-semibold' : 'text-slate-600 hover:text-blue-500'}`}>{link.title}</Link></li>
           ))}
         </motion.ul>
       )}
@@ -50,22 +52,33 @@ const MobileAccordionItem = ({ title, links, isOpen, onToggle, pathname }: Mobil
   </motion.li>
 );
 
-// --- MAIN HEADER COMPONENT ---
 export const Header = () => {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
   const pathname = usePathname();
+  const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
-    if (isMobileMenuOpen) { setIsMobileMenuOpen(false); setOpenAccordion(null); }
+    if (isMobileMenuOpen) { 
+        document.body.style.overflow = 'hidden'; 
+    } else {
+        document.body.style.overflow = '';
+    }
+  }, [isMobileMenuOpen]);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) { 
+        setIsMobileMenuOpen(false); 
+        setOpenAccordion(null); 
+    }
   }, [pathname]);
 
   const handleAccordionToggle = (key: string) => { setOpenAccordion(openAccordion === key ? null : key); };
@@ -88,10 +101,10 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      <nav className={`bg-white shadow-md transition-all duration-300 ${isScrolled ? 'py-1' : 'py-2'}`}>
+
+      <nav className={`transition-all duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-xl shadow-lg py-1' : 'bg-white shadow-md py-2'}`}>
         <div className="container mx-auto flex justify-between items-center px-4">
           <Link href="/"><Image src="/ieee-vbit-sb.png" alt="IEEE VBIT SB Logo" width={isScrolled ? 50 : 60} height={isScrolled ? 50 : 60} className="transition-all duration-300" /></Link>
-          
           <ul className="hidden lg:flex items-center space-x-8 text-sm font-bold">
             <li><Link href="/" className={pathname === '/' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}>HOME</Link></li>
             {Object.entries(navLinks).map(([key, links]) => {
@@ -115,7 +128,6 @@ export const Header = () => {
             <li><Link href="/contact" className={pathname === '/contact' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}>CONTACT</Link></li>
             <li><Link href="/sitemap" className={pathname === '/sitemap' ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}>SITE MAP</Link></li>
           </ul>
-          
           <div className="lg:hidden"><button onClick={() => setIsMobileMenuOpen(true)} aria-label="Open menu"><Menu size={28} className="text-gray-800" /></button></div>
         </div>
       </nav>
@@ -124,27 +136,32 @@ export const Header = () => {
         {isMobileMenuOpen && (
           <motion.div
             initial={{ x: '100%' }} animate={{ x: 0 }} exit={{ x: '100%' }}
-            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-            className="fixed inset-0 bg-white z-[101] p-4 flex flex-col overflow-hidden"
+            transition={shouldReduceMotion ? {duration: 0.1} : { type: 'spring', stiffness: 300, damping: 30 }}
+            className="fixed inset-0 bg-slate-50 z-[101] p-4 flex flex-col overflow-hidden"
+            style={{ willChange: 'transform' }}
           >
-            <motion.div animate={{ rotate: 360 }} transition={{ duration: 30, repeat: Infinity, ease: 'linear' }} className="absolute -top-40 -left-40 w-96 h-96 bg-blue-400 rounded-full opacity-30 blur-3xl" />
-            <motion.div animate={{ rotate: -360 }} transition={{ duration: 40, repeat: Infinity, ease: 'linear' }} className="absolute -bottom-40 -right-40 w-96 h-96 bg-cyan-400 rounded-full opacity-30 blur-3xl" />
-            <div className="flex justify-between items-center mb-8 relative z-10">
+            <div className="absolute -top-40 -left-40 w-96 h-96 bg-blue-500/60 rounded-full opacity-50 blur-3xl" />
+            <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-cyan-500/60 rounded-full opacity-50 blur-3xl" />
+            
+            <div className="flex justify-between items-center mb-8 relative z-10 flex-shrink-0">
               <Image src="/ieee-vbit-sb.png" alt="IEEE VBIT SB Logo" width={60} height={60} />
               <button onClick={() => setIsMobileMenuOpen(false)} aria-label="Close menu"><X size={28} className="text-slate-700" /></button>
             </div>
-            <motion.ul 
-              className="flex flex-col space-y-4 text-lg font-bold relative z-10"
-              initial="initial" animate="animate" transition={{ staggerChildren: 0.07 }}
-            >
-              <motion.li variants={mobileLinkVariants}><Link href="/" className="text-slate-800 hover:text-blue-600">HOME</Link></motion.li>
-              {Object.entries(navLinks).map(([key, links]) => (
-                <MobileAccordionItem key={key} title={key} links={links} isOpen={openAccordion === key} onToggle={() => handleAccordionToggle(key)} pathname={pathname} />
-              ))}
-              <motion.li variants={mobileLinkVariants}><Link href="/achievements" className="text-slate-800 hover:text-blue-600">ACHIEVEMENTS</Link></motion.li>
-              <motion.li variants={mobileLinkVariants}><Link href="/contact" className="text-slate-800 hover:text-blue-600">CONTACT</Link></motion.li>
-              <motion.li variants={mobileLinkVariants}><Link href="/sitemap" className="text-slate-800 hover:text-blue-600">SITE MAP</Link></motion.li>
-            </motion.ul>
+            
+            <div className="flex-grow overflow-y-auto overflow-x-hidden relative z-10">
+              <motion.ul 
+                className="flex flex-col space-y-4 text-lg font-bold"
+                initial="initial" animate="animate" transition={{ staggerChildren: 0.07 }}
+              >
+                <motion.li variants={mobileLinkVariants}><Link href="/" className="text-slate-800 hover:text-blue-600">HOME</Link></motion.li>
+                {Object.entries(navLinks).map(([key, links]) => (
+                  <MobileAccordionItem key={key} title={key} links={links} isOpen={openAccordion === key} onToggle={() => handleAccordionToggle(key)} pathname={pathname} />
+                ))}
+                <motion.li variants={mobileLinkVariants}><Link href="/achievements" className="text-slate-800 hover:text-blue-600">ACHIEVEMENTS</Link></motion.li>
+                <motion.li variants={mobileLinkVariants}><Link href="/contact" className="text-slate-800 hover:text-blue-600">CONTACT</Link></motion.li>
+                <motion.li variants={mobileLinkVariants}><Link href="/sitemap" className="text-slate-800 hover:text-blue-600">SITE MAP</Link></motion.li>
+              </motion.ul>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
