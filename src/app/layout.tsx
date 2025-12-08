@@ -6,7 +6,7 @@ import { ClientLayoutWrapper } from "@/components/ClientLayoutWrapper";
 
 const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.ieeevbitsb.in'),
+  metadataBase: new URL('https://ieeevbitsb.in'),
   alternates: {
     canonical: '/',
   },
@@ -23,8 +23,8 @@ const jsonLd = {
   '@type': 'Organization',
   'name': 'IEEE VBIT Student Branch',
   'alternateName': 'IEEE VBIT SB',
-  'url': 'https://www.ieeevbitsb.in',
-  'logo': 'https://www.ieeevbitsb.in/ieee-vbit-sb.png',
+  'url': 'https://ieeevbitsb.in',
+  'logo': 'https://ieeevbitsb.in/ieee-vbit-sb.png',
   'contactPoint': {
     '@type': 'ContactPoint',
     'email': 'ieeevbitsbdoc@gmail.com',

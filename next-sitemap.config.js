@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.ieeevbitsb.in', 
+  siteUrl: 'https://ieeevbitsb.in', 
   generateRobotsTxt: true,
   
   // This adds the custom AI directive and keeps your existing rules.
@@ -17,7 +17,7 @@ module.exports = {
       // },
     ],
     additionalSitemaps: [
-      'https://www.ieeevbitsb.in/sitemap.xml',
+      'https://ieeevbitsb.in/sitemap.xml',
     ],
     transform: async (config, robotsTxt) => {
         const customDirectives = `User-Agent: Google-Extended\ndisallow: /\n\nUser-Agent: *\nContent-signal: search=yes,ai-train=no`;
