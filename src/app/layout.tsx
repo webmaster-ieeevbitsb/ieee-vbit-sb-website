@@ -34,6 +34,7 @@ const jsonLd = {
     'https://www.facebook.com/ieeevbitsb',
     'https://www.instagram.com/ieee_vbitsb/',
     'https://www.linkedin.com/company/ieee-vbit-sb',
+    'https://whatsapp.com/channel/0029Vb6F16ALdQekr3hPVz3D',
   ],
 };
 
