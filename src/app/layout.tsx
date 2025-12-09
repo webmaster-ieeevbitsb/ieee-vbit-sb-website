@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import "./globals.css";
 import Favicon from './favicon.png';
 import { ClientLayoutWrapper } from "@/components/ClientLayoutWrapper";
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -71,6 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ClientLayoutWrapper>
           {children}
         </ClientLayoutWrapper>
+        <Analytics />
       </body>
     </html>
   );
