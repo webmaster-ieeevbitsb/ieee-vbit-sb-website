@@ -8,6 +8,7 @@ import { FadeIn } from '@/components/FadeIn';
 import { AnimatePresence } from 'framer-motion';
 import { Lightbox } from '@/components/Lightbox';
 import type { GalleryEventData } from '@/data/galleryData';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export default function GalleryPage() {
   const [activeLightbox, setActiveLightbox] = useState<{ event: GalleryEventData; initialIndex: number } | null>(null);
@@ -38,6 +39,7 @@ export default function GalleryPage() {
         {galleryData.map((event, index) => (
           <AnimateOnScroll key={event.slug}>
             <div className="container mx-auto px-8 sm:px-12 lg:px-24 py-10">
+              <Breadcrumbs />
               <EventCarouselCard 
                 event={event} 
                 isReversed={index % 2 !== 0} 

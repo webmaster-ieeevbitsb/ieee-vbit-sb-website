@@ -5,6 +5,7 @@ import { FeatureCard } from "@/components/FeatureCard";
 import { CtaBanner } from "@/components/CtaBanner";
 import { Target, Atom } from "lucide-react";
 import type { Metadata } from "next";
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: "About IEEE WIE – AG",
@@ -53,6 +54,7 @@ export default function WiePage() {
       <FadeIn>
         <section className="bg-white py-5">
           <div className="container mx-auto px-8 sm:px-12 lg:px-24 grid md:grid-cols-2 gap-12 items-center">
+            <Breadcrumbs />
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
                 Women In Engineering - Affinity Group

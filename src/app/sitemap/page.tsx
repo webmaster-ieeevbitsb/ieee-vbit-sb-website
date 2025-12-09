@@ -3,6 +3,7 @@ import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { FadeIn } from '@/components/FadeIn';
 import { sitemapData } from '@/data/sitemapData';
 import type { Metadata } from 'next';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Site Map',
@@ -19,6 +20,7 @@ export default function SiteMapPage() {
       </FadeIn>
 
       <div className="container mx-auto px-4 max-w-6xl">
+        <Breadcrumbs />
         <div className="space-y-16">
           {sitemapData.map((section) => (
             <AnimateOnScroll key={section.title}>

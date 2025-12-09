@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 import { FadeIn } from "@/components/FadeIn";
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: "Memberships",
@@ -26,6 +27,7 @@ export default function MembershipsPage() {
       <FadeIn>
         <section className="bg-blue-600 text-white py-10">
           <div className="container mx-auto px-8 sm:px-12 lg:px-16 max-w-4xl">
+            <Breadcrumbs />     
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Memberships</h1>
             <p className="text-lg text-blue-100 leading-relaxed text-justify">
               IEEE membership offers access to technical innovation, cutting-edge

@@ -3,6 +3,7 @@ import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { FadeIn } from '@/components/FadeIn';
 import { reportsData } from '@/data/reportsData';
 import type { Metadata } from 'next';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Reports',
@@ -19,6 +20,7 @@ export default function ReportsPage() {
       </FadeIn>
 
       <div className="container mx-auto px-4 max-w-5xl">
+        <Breadcrumbs />
         {reportsData.map((yearGroup) => (
           <AnimateOnScroll key={yearGroup.year}>
             <ReportYearSection {...yearGroup} />

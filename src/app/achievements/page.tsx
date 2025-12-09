@@ -4,6 +4,7 @@ import { AchievementItem } from '@/components/AchievementItem';
 import { achievementsData } from '@/data/achievementsData';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { FadeIn } from '@/components/FadeIn';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export default function AchievementsPage() {
   
@@ -21,6 +22,7 @@ export default function AchievementsPage() {
       </FadeIn>
 
       <div className="container mx-auto px-4 max-w-4xl">
+        <Breadcrumbs />
         <div className="space-y-12">
           {achievementsData.map((achievement, index) => (
             <AnimateOnScroll key={index}>

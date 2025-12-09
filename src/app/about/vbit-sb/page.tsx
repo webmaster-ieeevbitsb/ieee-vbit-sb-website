@@ -6,7 +6,7 @@ import { CheckCircle2 } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About IEEE - VBIT SB",
+  title: "About the IEEE VBIT Student Branch",
 };
 
 const objectives = [
