@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { Home, CheckCircle2 } from 'lucide-react';
 import type { Metadata } from 'next';
 
-// Set the metadata for the page title
 export const metadata: Metadata = {
   title: 'Thank You!',
 };

@@ -2,7 +2,6 @@ import Image from "next/image";
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { FadeIn } from '@/components/FadeIn';
 import type { Metadata } from "next";
-import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: "About IEEE R10",
@@ -14,7 +13,6 @@ export default function AboutR10Page() {
       <FadeIn>
         <section className="py-10">
           <div className="container mx-auto px-8 sm:px-12 lg:px-24 grid md:grid-cols-2 gap-12 items-center">
-            <Breadcrumbs />
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">IEEE R10</h1>
               <div className="w-24 h-1.5 bg-blue-600 mb-8"></div>

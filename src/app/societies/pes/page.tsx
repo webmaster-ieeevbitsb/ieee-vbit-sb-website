@@ -7,7 +7,6 @@ import { CtaBanner } from "@/components/CtaBanner";
 import { BenefitCard } from "@/components/BenefitCard";
 import { Target, Lightbulb, Globe, Atom } from "lucide-react";
 import type { Metadata } from "next";
-import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: "IEEE Power & Energy Society",
@@ -21,7 +20,6 @@ export default function PesPage() {
       <FadeIn>
         <section className="bg-white py-10">
           <div className="container mx-auto px-8 sm:px-12 lg:px-24 grid md:grid-cols-2 gap-12 items-center">
-            <Breadcrumbs />
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
                 Power and Energy Society
