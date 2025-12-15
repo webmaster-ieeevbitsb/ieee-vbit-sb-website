@@ -1,4 +1,3 @@
-// Define the structure for a single contact person
 export type ContactPerson = {
   name: string;
   role: string;

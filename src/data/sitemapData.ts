@@ -1,4 +1,3 @@
-// Define the structure for a single link
 export type SiteMapLink = {
   title: string;
   href: string;
