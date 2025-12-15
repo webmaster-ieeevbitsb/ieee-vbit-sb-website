@@ -1,5 +1,3 @@
-// Located at: supabase/functions/contact-form/index.ts
-
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
 console.log("Contact Form Function Initialized");
