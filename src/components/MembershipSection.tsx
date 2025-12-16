@@ -35,7 +35,7 @@ export const MembershipSection = () => (
       <div className="py-20">
         <CtaBanner
           title="Explore All Membership Benefits and Opportunities"
-          buttonText="LEARN MORE"
+          buttonText="Explore Membership Benefits"
           buttonLink="/memberships"
         />
       </div>

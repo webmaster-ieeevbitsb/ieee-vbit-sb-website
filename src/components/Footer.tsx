@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';
+
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
 import { SiWhatsapp } from 'react-icons/si';
 
@@ -9,19 +9,19 @@ export const Footer = () => {
       <div className="container mx-auto">
         <div className="flex justify-center items-center gap-6 mb-6">
           {/* Facebook Icon */}
-          <a href="https://www.facebook.com/ieeevbitsb" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+          <a href="https://www.facebook.com/ieeevbitsb" aria-label="Visit our Facebook page" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
             <Facebook size={24} strokeWidth={1.5} />
           </a>
           {/* Instagram Icon */}
-          <a href="https://www.instagram.com/ieee_vbitsb/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+          <a href="https://www.instagram.com/ieee_vbitsb/" aria-label="Visit our Instagram page" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
             <Instagram size={24} strokeWidth={1.5} />
           </a>
           {/* LinkedIn Icon */}
-          <a href="https://www.linkedin.com/company/ieee-vbit-sb" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+          <a href="https://www.linkedin.com/company/ieee-vbit-sb" aria-label="Visit our LinkedIn page" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
             <Linkedin size={24} strokeWidth={1.5} />
           </a>
           {/* WhatsApp Icon */}
-          <a href="https://whatsapp.com/channel/0029Vb6F16ALdQekr3hPVz3D" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+          <a href="https://whatsapp.com/channel/0029Vb6F16ALdQekr3hPVz3D" aria-label="Visit our WhatsApp channel" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
             <SiWhatsapp size={24} />
           </a>
         </div>
