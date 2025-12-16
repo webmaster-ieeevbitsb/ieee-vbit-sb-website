@@ -7,7 +7,7 @@ import { Target, Atom } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About IEEE WIE – AG",
+  title: "About IEEE Women in Engineering - Affinity Group | IEEE - VBIT SB",
 };
 
 export default function WiePage() {

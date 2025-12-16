@@ -1,9 +1,7 @@
-// Located at: ieee-vbit-new-site/src/app/contact/page.tsx
-
 'use client'; 
 
 import { useState } from 'react';
-import Link from 'next/link';
+import { useEffect } from 'react';
 import { ContactPersonCard } from '@/components/ContactPersonCard';
 import { contactData } from '@/data/contactData';
 import { Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
@@ -13,6 +11,12 @@ import { LazyMap } from '@/components/LazyMap';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function ContactPage() {
+  
+  useEffect(() => {
+    document.title = 'Contact Us | IEEE - VBIT SB';
+  }, []);
+
+
   const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.7743792694455!2d78.7196795756745!3d17.470509692224454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb76ea23dfa8d5%3A0x72d3ea7f454e19ea!2sVignana%20Bharathi%20Institute%20of%20Technology%20(VBIT)%20%7C%20Top%20Engineering%20Colleges%20In%20Telangana!5e0!3m2!1sen!2sin!4v1760363263481!5m2!1sen!2sin";
 
   const [submissionStatus, setSubmissionStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
