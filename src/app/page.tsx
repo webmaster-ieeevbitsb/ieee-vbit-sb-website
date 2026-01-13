@@ -14,7 +14,10 @@ export default function Home() {
 
   return (
     <div>
-
+      <h1 className="sr-only">
+        IEEE Student Branch at VBIT - Official Website
+      </h1>
+      
       <FadeIn>
         <ActivityCatalogue />
       </FadeIn>
