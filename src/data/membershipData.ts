@@ -10,7 +10,7 @@ export const membershipBanners: MembershipBanner[] = [
     imageUrl: '/placeholders/student_membership_banner.webp', 
     altText: 'IEEE Student Membership Benefits',
     buttonText: 'BECOME A STUDENT MEMBER',
-    buttonLink: 'https://forms.gle/o7JS3cKJzsZEuQfN8', 
+    buttonLink: 'https://forms.gle/AZteVZBQKtq6mUuc8', 
   },
   {
     imageUrl: '/placeholders/professional_membership_banner.webp', 
