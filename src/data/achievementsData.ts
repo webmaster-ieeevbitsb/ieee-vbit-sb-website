@@ -25,6 +25,6 @@ export const achievementsData: Achievement[] = [
   { year: '2013', title: 'Richard E. Merwin Student Scholarship Award', description: 'Mr. karthik siddawaram received “Richard E Merwin Student Scholarship Award” in the year 2013.', imageUrl: '/placeholders/achievements/Richard E - Merwin Student Scholarship Award-karthik.webp' },
   { year: '2011', title: 'Darrel Chong Gold Student Activity Award', description: 'Received Darrel Chong Gold Student Activity Award” for the year 2011.', imageUrl: '/placeholders/achievements/Darrel Chong Gold Student Activity Award.webp' },
   { year: '2010', title: 'Richard E. Merwin Student Scholarship Award', description: 'Mr. Chaitanya Kumar Setty received “Richard E Merwin Student Scholarship Award” in the year 2010.', imageUrl: '/placeholders/achievements/Richard E - Merwin Student Scholarship Award-Chaitanya.webp' },
-  { year: '2009 - 10', title: 'Outstanding Student Branch Award', description: 'Received “Outstanding Student Branch Award” for the year 2009 - 10.', imageUrl: '/placeholders/achievements/IEEE Vibrant Student Branch Award.webp' },
+  { year: '2009 - 10', title: 'Outstanding Student Branch Award', description: 'Received “Outstanding Student Branch Award” for the year 2009 - 10.', imageUrl: '/placeholders/achievements/Outstanding Student Branch Award.webp' },
   { year: '2009 - 10', title: 'IEEE Vibrant Student Branch Award', description: 'Received “IEEE Vibrant Student Branch Award” for the year 2009 - 10.', imageUrl: '/placeholders/achievements/IEEE Vibrant Student Branch Award.webp' },
 ];
