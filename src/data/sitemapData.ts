@@ -23,6 +23,7 @@ export const sitemapData: SiteMapSectionData[] = [
     links: [
       { title: 'IEEE', href: '/about/ieee' },
       { title: 'IEEE Region 10', href: '/about/r10' },
+      { title: 'IEEE India Council', href: '/about/india-council' },
       { title: 'IEEE Hyderabad Section', href: '/about/hyd-section' },
       { title: 'Memberships', href: '/memberships' },
     ],
