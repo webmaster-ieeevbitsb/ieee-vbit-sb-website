@@ -61,10 +61,10 @@ export default function AboutIndiaCouncilPage() {
               
               <FeatureCard 
                 icon={<Globe size={40} className="text-blue-600" />} 
-                title="13 Sections"
+                title="13 Section and 15 Subsection"
               >
                 The Council coordinates the activities of 13 Sections: Bangalore, Bombay, Calcutta, Delhi, 
-                Gujarat, Hyderabad, Kerala, Kharagpur, Madras, Pune, Uttar Pradesh, Vizag Bay, and Roorkee.
+                Gujarat, Hyderabad, Kerala, Kharagpur, Madras, Pune, Uttar Pradesh, Vizag Bay and Roorkee.
               </FeatureCard>
 
               <FeatureCard 
@@ -72,7 +72,7 @@ export default function AboutIndiaCouncilPage() {
                 title="INDICON"
               >
                 <strong>INDICON</strong> is the flagship annual conference of the IEEE India Council. 
-                It brings together professionals, researchers, and students to discuss the latest 
+                It brings together professionals, researchers and students to discuss the latest 
                 advancements in technology and engineering.
               </FeatureCard>
 
@@ -99,8 +99,8 @@ export default function AboutIndiaCouncilPage() {
               <p>
                 To be the platform for the IEEE Sections in India to collaborate and work together for the 
                 advancement of technology and for the benefit of humanity. The Council aims to encourage 
-                and support the Sections in their efforts to engage members, students, and professionals 
-                in technical activities, continuing education, and community service.
+                and support the Sections in their efforts to engage members, students and professionals 
+                in technical activities, continuing education and community service.
               </p>
               <p>
                 The Council also publishes a newsletter, <strong>"IEEE India Info,"</strong> which circulates 
