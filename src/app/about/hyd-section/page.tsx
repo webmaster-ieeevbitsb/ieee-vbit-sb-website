@@ -2,23 +2,22 @@ import Image from "next/image";
 import { FadeIn } from '@/components/FadeIn';
 import type { Metadata } from "next";
 
-
 export const metadata: Metadata = {
   title: "About IEEE Hyderabad Section",
 };
 
 export default function AboutHydSectionPage() {
   return (
-    <div className="bg-white">
+    <div className="bg-white text-gray-800">
       <FadeIn>
-        <section className="py-10">
+        <section className="py-12">
           <div className="container mx-auto px-8 sm:px-12 lg:px-24 grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
                 IEEE Hyderabad Section
               </h1>
               <div className="w-24 h-1.5 bg-blue-600 mb-8"></div>
-              <p className="text-gray-700 leading-relaxed text-justify">
+              <p className="text-gray-700 leading-relaxed text-justify text-lg">
                 IEEE Hyderabad Section is one of the most active sections of IEEE
                 in India. IEEE was formally introduced in Hyderabad on June 1981,
                 when a group of engineers in Hyderabad decided to form an IEEE
@@ -37,6 +36,16 @@ export default function AboutHydSectionPage() {
                 Management Society(TEMS) and TWO Affinity Groups - Women in
                 Engineering (WIE) and Young Professionals (YP).
               </p>
+              <div className="mt-8">
+                <a 
+                  href="https://ieeehyderabad.org/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-md text-base hover:bg-blue-500 transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  Visit Official Website
+                </a>
+              </div>
             </div>
             <div className="flex justify-center md:justify-end">
               <Image
@@ -45,6 +54,7 @@ export default function AboutHydSectionPage() {
                 width={500}
                 height={150}
                 objectFit="contain"
+                className="drop-shadow-xl"
                 priority
               />
             </div>
