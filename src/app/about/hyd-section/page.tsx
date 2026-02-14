@@ -38,7 +38,7 @@ export default function AboutHydSectionPage() {
               </p>
               <div className="mt-8">
                 <a 
-                  href="https://ieeehyderabad.org/" 
+                  href="http://ieeehyd.org/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-md text-base hover:bg-blue-500 transition-all duration-300 shadow-lg hover:shadow-xl"
