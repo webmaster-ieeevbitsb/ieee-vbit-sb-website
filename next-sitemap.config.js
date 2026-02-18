@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: 'https://ieeevbitsb.in', 
-  generateRobotsTxt: true,
+  generateRobotsTxt: false, // We will handle robots.txt manually to include the custom directive
   
   // This adds the custom AI directive and keeps your existing rules.
   robotsTxtOptions: {
