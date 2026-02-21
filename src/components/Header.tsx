@@ -11,7 +11,7 @@ type NavLink = { title: string; href: string; };
 type NavLinks = { [key: string]: NavLink[]; };
 const navLinks: NavLinks = {
   about: [ { title: 'About IEEE', href: '/about/ieee' }, { title: 'About IEEE R10', href: '/about/r10' }, { title: 'About IEEE India Council', href: '/about/india-council' }, { title: 'About IEEE HYD SECTION', href: '/about/hyd-section' }, { title: 'About IEEE - VBIT SB', href: '/about/vbit-sb' }, { title: 'Memberships', href: '/memberships' }, ],
-  societies: [ { title: 'Computer Society', href: '/societies/computer-society' }, { title: 'Communications Society', href: '/societies/communications-society' }, { title: 'Power & Energy Society', href: '/societies/pes' }, { title: 'IEEE WIE - AG', href: '/societies/wie' }, ],
+  societies: [ { title: 'Computer Society', href: '/societies/computer-society' }, { title: 'Communications Society', href: '/societies/communications-society' }, { title: 'Power & Energy Society', href: '/societies/pes' }, { title: 'WiE - Affinity Group', href: '/societies/wie' }, ],
   execom: [ { title: 'Team (2025-26)', href: '/execom/2025-26' }, { title: 'Team (2024-25)', href: '/execom/2024-25' }, { title: 'Team (2023-24)', href: '/execom/2023-24' }, ],
   events: [ { title: 'Gallery', href: '/events/gallery' }, { title: 'Reports', href: '/events/reports' }, ],
 };
